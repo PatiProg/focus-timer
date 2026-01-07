@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fokustimer für Schüler</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <h1>Fokustimer</h1>
+    </header>
+
+    <main>
+      <button class="addTaskBtn" id="addTaskBtn">Aufgabe hinzufügen</button>
+    </main>
+
+    <!-- Pop Up -->
+    <div class="modal-container" id="modal_container">
+      <div class="modal">
+        <h2>Aufgabe hinzufügen</h2>
+        <div class="content">
+          <input type="text" id="taskName" placeholder="Name der Aufgabe..." />
+          <input type="number" id="duration" placeholder="Dauer (min)" />
+        </div>
+        <div class="footer">
+          <button id="cancel">Abbrechen</button>
+          <button id="start">Starten</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
